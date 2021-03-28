@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "inconsolata:pixelsize=15:antialias=true:autohint=true";
+static char *font = "inconsolata:pixelsize=17:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -27,7 +27,7 @@ char *vtiden = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
 static float cwscale = 0.3;
-static float chscale = 0.9;
+static float chscale = 1.0;
 
 /*
  * word delimiter string
