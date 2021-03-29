@@ -143,7 +143,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
@@ -198,11 +198,12 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
-	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
-	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
+	{ ShiftMask,            XK_C,           clipcopy,       {.i =  0} },
+	{ ShiftMask,            XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+	{ ShiftMask,            XK_L,           copyurl,        {.i =  0} },
 };
 
 /*
