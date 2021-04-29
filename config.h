@@ -94,34 +94,34 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.9;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",     /*Background*/
-	"#e62136",   /*Red*/
-	"#019875",   /*Green*/
-	"#d4ce39",   /*yellow*/
-	"#2946f2",    /*blue*/
-	"magenta",   /*Magenta*/
-	"#36badf",    /*cyan*/
-	"gray",    /*gray*/
+	"#000000",     /*Black*/
+	"#ff5555",   /*Red*/
+	"#50fa7b",   /*Green*/
+	"#f1fa8c",   /*yellow*/
+	"#bd93f9",    /*blue*/
+	"#ff79c6",   /*Magenta*/
+	"#8be9fd",    /*cyan*/
+	"#bbbbbb",    /*gray*/
 
 	/* 8 bright colors */
-	"gray50",
-	"#dd4124",
-	"#00b754",/*green*/
-	"yellow",
-	"#0048ff", /*blue*/
-	"magenta",
-	"cyan",
-	"gray",
+	"#44475a",
+	"#ff5555",
+	"#50fa7b",/*green*/
+	"#f1fa8c",
+	"#bd93f9", /*blue*/
+	"#ff79c6",
+	"#8be9fd",
+	"#ffffff",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
+	[256] = "#282a36",
 	"#555555",
 	"black",
 };
@@ -143,7 +143,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 6;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
